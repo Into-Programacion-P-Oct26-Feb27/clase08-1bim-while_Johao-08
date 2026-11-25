@@ -30,6 +30,9 @@ public class Ejemplo034 {
         limite = entrada.nextInt();
 
         if (limite >= 10 && 1 >= limite) {
+            System.out.println("Correcto");
+        } else {
+            System.out.println("Limite incorrecto");
             limite = 3;
         }
 
