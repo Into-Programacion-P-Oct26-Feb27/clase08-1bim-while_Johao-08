@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejemplo033 {
+public class Ejemplo034 {
 
     /**
      * @param args the command line arguments
@@ -21,13 +21,17 @@ public class Ejemplo033 {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
-        int limite;
+        int limite; // 1-10
         int contador = 1;
         int suma = 0;
         int valor_ingresado;
-        
+
         System.out.println("Ingrese el limite para el ejercicio:");
-            limite = entrada.nextInt();
+        limite = entrada.nextInt();
+
+        if (limite >= 10 && 1 >= limite) {
+            limite = 3;
+        }
 
         while (contador <= limite) {
             System.out.println("Ingrese el valor a sumar");
